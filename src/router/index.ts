@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
-import Layout from "@/layout/index.vue"
+import Layout from '@/layout/index.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -18,13 +18,13 @@ const router = createRouter({
       ],
     },
     {
-//  import { useRoute, useRouter } from 'vue-router';
-//  const router = useRouter()
-//  const route = useRoute()
-//  router.replace({
-//    path: "redirect" + '/login',
-//    query: { 'sd': 123 },
-//  })
+      //  import { useRoute, useRouter } from 'vue-router';
+      //  const router = useRouter()
+      //  const route = useRoute()
+      //  router.replace({
+      //    path: "redirect" + '/login',
+      //    query: { 'sd': 123 },
+      //  })
       path: '/redirect',
       component: Layout,
       meta: { hidden: true },
@@ -54,7 +54,7 @@ const router = createRouter({
         },
       ],
     },
-  ]
-})
+  ],
+});
 
-export default router
+export default router;
